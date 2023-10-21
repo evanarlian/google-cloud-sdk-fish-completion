@@ -79,7 +79,7 @@ function __call_argcomplete
       return
    end
 
-   if test ! $rval
+   if test ! "$rval"
       if test (count $words) -gt 2 -a -n $lastWord
          # Fallback scenario 1: try to ignore the last word if it's not complete:
          # Note: this can only happen in the first call on the stack, since we then fallback by words
